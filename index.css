@@ -1,0 +1,17 @@
+:root {
+  /* color */
+  --color-black: black;
+  --color-white: #ffffff;
+  --color-pink: #ff585d;
+  --color-light-grey: #bdc3c7;
+  --color-grey: #535c68;
+
+  /* size */
+  --base-space: 8px;
+  --font-small-size: 14px;
+  --font-medium-size: 18px;
+  --font-large-size: 22px;
+  --size-border: 30px;
+  --font-line-height: 30px;
+  --border-radius: 4px;
+}
