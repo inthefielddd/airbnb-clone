@@ -4,11 +4,315 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>clonebnb</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
     <script
       src="https://kit.fontawesome.com/1737127eac.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body></body>
+  <body>
+    <!-- sidebar -->
+    <aside id="sidebar"></aside>
+
+    <!-- nav -->
+    <nav id="nav">
+      <!-- logo -->
+      <div class="logo">
+        <i class="fab fa-airbnb" alt="logo"></i>
+        <span>clonebnb</span>
+      </div>
+
+      <!-- navbar & serch-->
+      <div class="container">
+        <!-- navbar__menu -->
+        <ul class="navbar__menu">
+          <li><a href="#">숙소</a></li>
+          <li><a href="#">장기숙박</a></li>
+          <li><a href="#">체험</a></li>
+          <li><a href="#">온라인체험</a></li>
+        </ul>
+
+        <!-- reservation search -->
+        <div class="serch-box">
+          <div class="search">
+            <div class="search__location">
+              <div class="search__text">위치</div>
+              <form class="serch__form">
+                <input
+                  type="text"
+                  placeholder="어디로 여행가세요?"
+                  class="location"
+                />
+              </form>
+            </div>
+            <div class="search__checkin">
+              <div class="search__text">체크인</div>
+              <form class="serch__form">
+                <input type="text" placeholder="날짜 추가" class="checkin" />
+              </form>
+            </div>
+            <div class="search__checkout">
+              <div class="search__text">체크인</div>
+              <form class="serch__form">
+                <input type="text" placeholder="날짜 추가" class="checkout" />
+              </form>
+            </div>
+            <div class="search__personnel">
+              <div class="search__text">인원</div>
+              <form class="serch__form">
+                <input type="text" placeholder="게스트추가" class="personnel" />
+              </form>
+            </div>
+            <div class="serch__btn">
+              <button type="button">
+                <i class="fas fa-search"></i>
+                <span>검색</span>
+              </button>
+            </div>
+          </div>
+          <!--/*.search -->
+        </div>
+        <!-- /*.search__box -->
+      </div>
+
+      <!-- navbar links -->
+      <ul class="navbar__links">
+        <li class="link__language">
+          <i class="fas fa-globe"></i>
+          <i class="fas fa-angle-down"></i>
+        </li>
+
+        <li class="link__login">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-user-tie"></i>
+        </li>
+      </ul>
+    </nav>
+    <!-- /* nav -->
+
+    <!-- main content -->
+    <section class="main-content">
+      <!-- 사진 추가 -->
+      <h2>
+        가까운 곳에서 즐기는 색다른여행
+      </h2>
+      <p>그동안 몰랐던 국내 여행지의 아름다움을 발견해 보세요</p>
+      <button type="button" class="main__btn">알아보기</button>
+    </section>
+
+    <!-- content1 -->
+    <article class="content con1">
+      <ul>
+        <li class="content__menu">
+          <a href="#">
+            <img src="./imgs/1.webp" alt="online-experience" />
+            <div class="content__menu__info">
+              <h3>온라인 체험</h3>
+              <p>
+                세계각지의 호스트가 진행하고 모두 함께 즐기는 독특한 액티비티
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li class="content__menu">
+          <a href="#">
+            <img src="./imgs/2.webp" alt="special-space" />
+            <div class="content__menu__info">
+              <h3>독특한 공간</h3>
+              <p>
+                단순한 숙소 이상의 특별함이 담긴 공간
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li class="content__menu">
+          <a href="#">
+            <img src="./imgs/3.jpg" alt="whole-house" />
+            <div class="content__menu__info">
+              <h3>집 전체</h3>
+              <p>
+                일행만을 위한 편안한 공간에서 친구 및 가족과 오붓한 시간을
+                보내세요
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </article>
+    <!-- content2 -->
+    <article class="content con2">
+      <section>
+        <div class="article__title">
+          <h2>온라인체험</h2>
+          <p>
+            세계 각지의 사람들을 만나 새로운 경험을 해보세요. 개성있는 호스트가
+            진행하는 실시간 영상 세션을 통해 이제 집에서도 안전하게 체험을
+            즐기실수있습니다
+          </p>
+        </div>
+        <div class="article__detail__btn">
+          <button type="button">모두 둘러보기</button>
+        </div>
+      </section>
+
+      <!-- 아니면 float -->
+      <!-- 그리드로 배치하기 -->
+      <div class="article__content">
+        <div class="content1">
+          <a href="#">
+            <img src="./imgs/2-1.webp" alt="photo" />
+            <div class="content__info">
+              <p>피트니스 모델 트레버 벨과 함께 운동하기</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="content2">
+          <a href="#">
+            <img src="./imgs/2-2.webp" alt="photo" />
+            <div class="content__info">
+              <p>맥팔랜드 가족과 함께 홈비디오 만들기</p>
+            </div>
+          </a>
+        </div>
+        <div class="content3">
+          <a href="#">
+            <img src="./imgs/2-3.webp" alt="photo" />
+            <div class="content__info">
+              <p></p>
+            </div>
+          </a>
+        </div>
+        <div class="content4">
+          <a href="#">
+            <img src="./imgs/2-4.jpg" alt="photo" />
+            <div class="content__info">
+              <p>사진작가 보니 로드리게스와 함께 멋진 인물 사진 찍기</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!--  content3 -->
+    <article class="content con3"></article>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer__info">
+        <!-- section 1 -->
+        <section class="footer__introduce">
+          <h4>소개</h4>
+          <ul>
+            <li><a href="#">에어비앤비 이용방법</a></li>
+            <li><a href="#">다양성 및 소속감</a></li>
+            <li><a href="#">접근성</a></li>
+            <li><a href="#">신뢰와 안전</a></li>
+            <li><a href="#">Airbnb Citizen</a></li>
+            <li><a href="#">올림픽</a></li>
+            <li><a href="#">뉴스룸</a></li>
+          </ul>
+        </section>
+
+        <!-- section 2 -->
+        <section class="footer__community">
+          <h4>커뮤니티</h4>
+          <ul>
+            <li><a href="#">에어비앤비 매거진</a></li>
+            <li><a href="#">에어비앤비 오소시에이트</a></li>
+            <li><a href="#">에어비앤비 비지니스 프로그램</a></li>
+            <li><a href="#">친구 초대하기</a></li>
+            <li><a href="#">채용정보</a></li>
+          </ul>
+        </section>
+
+        <!-- section 3 -->
+        <section class="footer__host">
+          <h4>호스팅하기</h4>
+          <ul>
+            <li><a href="#">숙소 호스팅</a></li>
+            <li><a href="#">온라인 체험 호스팅하기</a></li>
+            <li><a href="#">브라이언 체스키 CEO의 메시지</a></li>
+            <li><a href="#">책임감 있는 호스팅</a></li>
+            <li><a href="#">Open Homes</a></li>
+            <li><a href="#">자료센터</a></li>
+            <li><a href="#">커뮤니티 센터</a></li>
+          </ul>
+        </section>
+
+        <section class="footer__supportive">
+          <h4>에어비앤비 지원</h4>
+          <ul>
+            <li><a href="#">코로나19 관련업데이트</a></li>
+            <li><a href="#">도움말 센터</a></li>
+            <li><a href="#">예약 취소 옵션</a></li>
+            <li><a href="#">에어비앤비 이웃 민원 지원</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="footer__link">
+        <div class="wrap">
+          <div class="language__currency">
+            <!--language & currency  -->
+            <span class="language">
+              <i class="fas fa-globe"></i>
+              <a href="#language">한국어(KR)</a>
+            </span>
+            <span class="currency">
+              <i class="fas fa-won-sign"></i>
+              <a href="#currency">KRW</a>
+            </span>
+          </div>
+          <!-- sns -->
+          <div class="links">
+            <ul>
+              <li>
+                <a href="#facebook"> <i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#twitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#instagram"> <i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#airbnb_blog">
+                  <i class="fas fa-blog"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#airbnb-post">
+                  <i class="fas fa-pen-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /*.wrap -->
+
+        <!-- copyright -->
+        <div class="copyright__wrap">
+          <div class="copyright">
+            <span>
+              &copy 2020 Airbnb,Inc. All right reserved
+            </span>
+          </div>
+
+          <ul class="copyright__info">
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">한국의 변경된 환불정책</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- /*footer -->
+
+    <script src="main.js"></script>
+  </body>
 </html>
