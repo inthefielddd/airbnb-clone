@@ -6,6 +6,16 @@
     <title>clonebnb</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/1737127eac.js"
       crossorigin="anonymous"
@@ -13,142 +23,182 @@
   </head>
   <body>
     <!-- sidebar -->
-    <aside id="sidebar"></aside>
+    <aside id="sidebar">
+      <a href="#"
+        ><span
+          >에어비앤비의 코로나 19 대응 방안에 대한 최신정보를 확인하세요</span
+        ></a
+      >
+    </aside>
 
-    <!-- nav -->
-    <nav id="nav">
-      <!-- logo -->
-      <div class="logo">
-        <i class="fab fa-airbnb" alt="logo"></i>
-        <span>clonebnb</span>
-      </div>
+    <div id="main__container">
+      <!-- main__img 배치 -->
+      <div class="main__img"></div>
+      <!-- header 안에  nav -->
+      <header id="header">
+        <!-- nav -->
+        <nav id="nav">
+          <!-- logo -->
+          <div class="logo">
+            <i class="fab fa-airbnb" alt="logo"></i>
+            <span>clonebnb</span>
+          </div>
 
-      <!-- navbar & serch-->
-      <div class="container">
-        <!-- navbar__menu -->
-        <ul class="navbar__menu">
-          <li><a href="#">숙소</a></li>
-          <li><a href="#">장기숙박</a></li>
-          <li><a href="#">체험</a></li>
-          <li><a href="#">온라인체험</a></li>
-        </ul>
+          <!-- navbar-->
+          <!-- navbar__menu -->
+          <ul class="navbar__menu">
+            <li><a href="#">숙소</a></li>
+            <li><a href="#">장기숙박</a></li>
+            <li><a href="#">체험</a></li>
+            <li><a href="#">온라인체험</a></li>
+          </ul>
 
-        <!-- reservation search -->
-        <div class="serch-box">
-          <div class="search">
-            <div class="search__location">
-              <div class="search__text">위치</div>
-              <form class="serch__form">
-                <input
-                  type="text"
-                  placeholder="어디로 여행가세요?"
-                  class="location"
-                />
-              </form>
-            </div>
+          <!-- navbar links -->
+          <ul class="navbar__links">
+            <li class="link__language">
+              <!-- 영역이 오버되기때문에 wrap 씌어줌 -->
+              <div class="link__language__wrap">
+                <i class="fas fa-globe"></i>
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </li>
+
+            <li class="link__login">
+              <!-- 영역이 오버되기때문에 wrap 씌어줌 -->
+              <div class="link__login__wrap">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-user-circle"></i>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- /* nav -->
+      </header>
+      <!-- /*header -->
+
+      <!-- nav 밖에 배치 -->
+      <!-- reservation search -->
+
+      <div class="search__wrap">
+        <!-- search 4개 묶음 -->
+        <div class="search">
+          <div class="search__location">
+            <div class="search__text">위치</div>
+            <form class="serch__form">
+              <input
+                type="text"
+                placeholder="어디로 여행가세요?"
+                class="location"
+              />
+            </form>
+          </div>
+          <div class="bar"></div>
+          <div class="search__checkdate">
             <div class="search__checkin">
               <div class="search__text">체크인</div>
               <form class="serch__form">
                 <input type="text" placeholder="날짜 추가" class="checkin" />
               </form>
             </div>
+            <div class="bar"></div>
+
             <div class="search__checkout">
               <div class="search__text">체크인</div>
               <form class="serch__form">
                 <input type="text" placeholder="날짜 추가" class="checkout" />
               </form>
             </div>
-            <div class="search__personnel">
-              <div class="search__text">인원</div>
-              <form class="serch__form">
-                <input type="text" placeholder="게스트추가" class="personnel" />
-              </form>
-            </div>
-            <div class="serch__btn">
-              <button type="button">
-                <i class="fas fa-search"></i>
-                <span>검색</span>
-              </button>
-            </div>
           </div>
-          <!--/*.search -->
+          <div class="bar"></div>
+
+          <div class="search__personnel">
+            <div class="search__text">인원</div>
+            <form class="serch__form">
+              <input type="text" placeholder="게스트추가" class="personnel" />
+            </form>
+          </div>
         </div>
-        <!-- /*.search__box -->
+
+        <div class="search__btn">
+          <button type="button">
+            <i class="fas fa-search"></i>
+            <span>검색</span>
+          </button>
+        </div>
       </div>
 
-      <!-- navbar links -->
-      <ul class="navbar__links">
-        <li class="link__language">
-          <i class="fas fa-globe"></i>
-          <i class="fas fa-angle-down"></i>
-        </li>
-
-        <li class="link__login">
-          <i class="fas fa-bars"></i>
-          <i class="fas fa-user-tie"></i>
-        </li>
-      </ul>
-    </nav>
-    <!-- /* nav -->
-
-    <!-- main content -->
-    <section class="main-content">
-      <!-- 사진 추가 -->
-      <h2>
-        가까운 곳에서 즐기는 색다른여행
-      </h2>
-      <p>그동안 몰랐던 국내 여행지의 아름다움을 발견해 보세요</p>
-      <button type="button" class="main__btn">알아보기</button>
-    </section>
+      <!--/*search__wrap -->
+      <!-- main content -->
+      <div class="main__content__wrap">
+        <section class="main__content">
+          <h2>
+            가까운 곳에서 <br />
+            즐기는 색다른여행
+          </h2>
+          <p>그동안 몰랐던 국내 여행지의 아름다움을 발견해 보세요</p>
+          <button type="button" class="main__btn">알아보기</button>
+        </section>
+      </div>
+      <!-- /*.main__content__wrap -->
+    </div>
+    <!-- /* #main__container -->
 
     <!-- content1 -->
-    <article class="content con1">
-      <ul>
-        <li class="content__menu">
-          <a href="#">
-            <img src="./imgs/1.webp" alt="online-experience" />
-            <div class="content__menu__info">
-              <h3>온라인 체험</h3>
-              <p>
-                세계각지의 호스트가 진행하고 모두 함께 즐기는 독특한 액티비티
-              </p>
-            </div>
-          </a>
-        </li>
+    <article id="content01">
+      <ul class="content01__wrap">
+        <div class="content__menu__wrap">
+          <li class="content__menu">
+            <a href="#">
+              <img src="./imgs/1.webp" alt="online-experience" />
+              <div class="content__menu__info">
+                <h3>온라인 체험</h3>
+                <p>
+                  세계각지의 호스트가 진행하고 모두 함께 즐기는 독특한 액티비티
+                </p>
+              </div>
+            </a>
+          </li>
+        </div>
 
-        <li class="content__menu">
-          <a href="#">
-            <img src="./imgs/2.webp" alt="special-space" />
-            <div class="content__menu__info">
-              <h3>독특한 공간</h3>
-              <p>
-                단순한 숙소 이상의 특별함이 담긴 공간
-              </p>
-            </div>
-          </a>
-        </li>
+        <div class="content__menu__wrap">
+          <li class="content__menu">
+            <a href="#">
+              <img src="./imgs/2.webp" alt="special-space" />
+              <div class="content__menu__info">
+                <h3>독특한 공간</h3>
+                <p>
+                  단순한 숙소 이상의 특별함이 담긴 공간
+                </p>
+              </div>
+            </a>
+          </li>
+        </div>
 
-        <li class="content__menu">
-          <a href="#">
-            <img src="./imgs/3.jpg" alt="whole-house" />
-            <div class="content__menu__info">
-              <h3>집 전체</h3>
-              <p>
-                일행만을 위한 편안한 공간에서 친구 및 가족과 오붓한 시간을
-                보내세요
-              </p>
-            </div>
-          </a>
-        </li>
+        <div class="content__menu__wrap">
+          <li class="content__menu">
+            <a href="#">
+              <img src="./imgs/3.jpg" alt="whole-house" />
+              <div class="content__menu__info">
+                <h3>집 전체</h3>
+                <p>
+                  일행만을 위한 편안한 공간에서 친구 및 가족과 오붓한 시간을
+                  보내세요
+                </p>
+              </div>
+            </a>
+          </li>
+        </div>
       </ul>
     </article>
+
     <!-- content2 -->
-    <article class="content con2">
-      <section>
-        <div class="article__title">
+    <article id="content02">
+      <section class="section">
+        <div class="article__content__title">
           <h2>온라인체험</h2>
           <p>
-            세계 각지의 사람들을 만나 새로운 경험을 해보세요. 개성있는 호스트가
+            세계 각지의 사람들을 만나 새로운 경험을 해보세요. 개성있는
+            호스트가<br />
             진행하는 실시간 영상 세션을 통해 이제 집에서도 안전하게 체험을
             즐기실수있습니다
           </p>
@@ -158,38 +208,36 @@
         </div>
       </section>
 
-      <!-- 아니면 float -->
-      <!-- 그리드로 배치하기 -->
-      <div class="article__content">
-        <div class="content1">
-          <a href="#">
-            <img src="./imgs/2-1.webp" alt="photo" />
-            <div class="content__info">
+      <div class="article__content__wrap">
+        <div class="article__content con1">
+          <a href="#" class="card">
+            <div class="item1 thumb"></div>
+            <div class="article__content__info">
               <p>피트니스 모델 트레버 벨과 함께 운동하기</p>
             </div>
           </a>
         </div>
 
-        <div class="content2">
-          <a href="#">
-            <img src="./imgs/2-2.webp" alt="photo" />
-            <div class="content__info">
+        <div class="article__content con2">
+          <a href="#" class="card">
+            <div class="item2 thumb"></div>
+            <div class="article__content__info">
               <p>맥팔랜드 가족과 함께 홈비디오 만들기</p>
             </div>
           </a>
         </div>
-        <div class="content3">
-          <a href="#">
-            <img src="./imgs/2-3.webp" alt="photo" />
-            <div class="content__info">
-              <p></p>
+        <div class="article__content con3">
+          <a href="#" class="card">
+            <div class="item3 thumb"></div>
+            <div class="article__content__info">
+              <p>안무가 아르벤기가에게 댄스 배우기</p>
             </div>
           </a>
         </div>
-        <div class="content4">
-          <a href="#">
-            <img src="./imgs/2-4.jpg" alt="photo" />
-            <div class="content__info">
+        <div class="article__content con4">
+          <a href="#" class="card">
+            <div class="item4 thumb"></div>
+            <div class="article__content__info">
               <p>사진작가 보니 로드리게스와 함께 멋진 인물 사진 찍기</p>
             </div>
           </a>
@@ -198,7 +246,32 @@
     </article>
 
     <!--  content3 -->
-    <article class="content con3"></article>
+    <article id="content03">
+      <div class="content03__wrap">
+        <!-- 구호인력 & btn -->
+        <div class="content__info">
+          <section>
+            <h1>
+              구호 인력 호스팅:세계 각지의 구호 인력에게 숙소를 제공하세요
+            </h1>
+          </section>
+          <div class="content__info_btn">
+            <button type="button">동참하기</button>
+          </div>
+        </div>
+
+        <div class="content__text">
+          <p>
+            인력에게 숙소를 제공하세요. 동참하기 코로나19와 맞서 싸우는 보건의료
+            인력, 긴급 구호 요원, 응급 구조 요원 등 10만 명에게 임시 숙소를
+            제공하는 '구호 인력을 위한 숙소' 프로그램에 에어비앤비 호스트
+            여러분의 참여를 부탁드립니다. 이는 감염 노출 위험이 있는 구호
+            인력에게 병원과 가까우면서도 가족과 떨어져 안전하게 머물 수 있는
+            숙소를 제공하기 위한 것입니다.
+          </p>
+        </div>
+      </div>
+    </article>
 
     <!-- footer -->
     <footer id="footer">

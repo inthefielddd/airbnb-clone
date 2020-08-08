@@ -1,0 +1,112 @@
+:root {
+  /* color */
+  --color-black: black;
+  --color-white: #ffffff;
+  --color-pink: #ff585d;
+  --color-light-grey: #bdc3c7;
+  --color-grey: #535c68;
+  --color-dark: rgb(46, 46, 46);
+  --color-light: rgb(242, 240, 240);
+
+  /* size */
+  --base-space: 8px;
+  --large-space: 14px;
+  --font-smaller-size: 13px;
+  --font-small-size: 14px;
+  --font-medium-size: 18px;
+  --font-logo-size: 25px;
+  --font-large-size: 30px;
+  --size-border: 30px;
+  --line-small-height: 1em;
+  --font-line-height: 1.6em;
+  --border-radius: 4px;
+  --border-big-radius: 32px;
+  --border-circle: 50%;
+}
+
+/* 1024px 될 때 */
+@media all and (max-width: 1128px) {
+  /* content02 */
+  .article__content__wrap {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* .con4 {
+    display: none;
+  } */
+  /* content03 */
+  .content__info {
+    margin-right: 40px;
+  }
+
+  .content__info section h1 {
+    font-weight: 500;
+    font-size: calc(var(--font-large-size) / 1.1);
+  }
+
+  .footer__info {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /*  footer__info section 마지막요소 제외하고 구분선 추가*/
+  .footer__info section:not(:last-child) {
+    border-bottom: 1px solid var(--color-light-grey);
+  }
+  .footer__info section:not(:first-child) {
+    padding-top: 24px;
+  }
+  .footer__link {
+    flex-direction: column;
+  }
+}
+
+/* 768px 까지 */
+@media all and (max-width: 768px) {
+  /* main-container */
+  .main__img {
+    background: url(./imgs/main2.jpg) no-repeat center / cover;
+  }
+  /* content02 */
+  /* 요소 하나씩 */
+  .article__content__wrap {
+    grid-template-columns: 100% 100% 100% 100%;
+    grid-template-rows: 1fr;
+    grid-gap: 12px;
+  }
+
+  /* content03 */
+  #content03 {
+    padding: 20px;
+    margin: 32px 0px 40px;
+  }
+  .content03__wrap {
+    flex-direction: column;
+    /* padding: 15px; */
+  }
+  .content__info section h1 {
+    font-size: calc(var(--font-medium-size) * 1.1);
+    line-height: var(--line-small-height);
+  }
+  .content__text {
+    color: var(--color-grey);
+    font-size: calc(var(--font-medium-size) / 1.2);
+  }
+
+  /* footer 영역 */
+  .links {
+    display: none;
+  }
+  .language__currency {
+    align-items: left;
+  }
+  .footer__link {
+    align-items: left;
+  }
+  .copyright__wrap {
+    flex-direction: column;
+  }
+}
