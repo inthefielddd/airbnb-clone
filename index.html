@@ -76,69 +76,69 @@
       </header>
       <!-- /*header -->
 
-      <!-- nav 밖에 배치 -->
-      <!-- reservation search -->
-
-      <div class="search__wrap">
-        <!-- search 4개 묶음 -->
-        <div class="search">
-          <div class="search__location">
-            <div class="search__text">위치</div>
-            <form class="serch__form">
-              <input
-                type="text"
-                placeholder="어디로 여행가세요?"
-                class="location"
-              />
-            </form>
-          </div>
-          <div class="bar"></div>
-          <div class="search__checkdate">
-            <div class="search__checkin">
-              <div class="search__text">체크인</div>
-              <form class="serch__form">
-                <input type="text" placeholder="날짜 추가" class="checkin" />
+      <!-- search와 main_content 감싸는 wrap -->
+      <div class="search__main__wrap">
+        <div class="search__wrap">
+          <!-- search 4개 묶음 -->
+          <div class="search">
+            <div class="search__location">
+              <div class="search__text">위치</div>
+              <form class="search__form">
+                <input
+                  type="text"
+                  placeholder="어디로 여행가세요?"
+                  class="location"
+                />
               </form>
             </div>
             <div class="bar"></div>
+            <div class="search__checkdate">
+              <div class="search__checkin">
+                <div class="search__text">체크인</div>
+                <form class="serch__form">
+                  <input type="text" placeholder="날짜 추가" class="checkin" />
+                </form>
+              </div>
+              <div class="bar"></div>
 
-            <div class="search__checkout">
-              <div class="search__text">체크인</div>
+              <div class="search__checkout">
+                <div class="search__text">체크인</div>
+                <form class="serch__form">
+                  <input type="text" placeholder="날짜 추가" class="checkout" />
+                </form>
+              </div>
+            </div>
+            <div class="bar"></div>
+
+            <div class="search__personnel">
+              <div class="search__text">인원</div>
               <form class="serch__form">
-                <input type="text" placeholder="날짜 추가" class="checkout" />
+                <input type="text" placeholder="게스트추가" class="personnel" />
               </form>
             </div>
           </div>
-          <div class="bar"></div>
 
-          <div class="search__personnel">
-            <div class="search__text">인원</div>
-            <form class="serch__form">
-              <input type="text" placeholder="게스트추가" class="personnel" />
-            </form>
+          <div class="search__btn">
+            <button type="button">
+              <i class="fas fa-search"></i>
+              <span>검색</span>
+            </button>
           </div>
         </div>
-
-        <div class="search__btn">
-          <button type="button">
-            <i class="fas fa-search"></i>
-            <span>검색</span>
-          </button>
+        <!--/*search__wrap -->
+        <!-- main content -->
+        <div class="main__content__wrap">
+          <section class="main__content">
+            <h2>
+              가까운 곳에서 <br />
+              즐기는 색다른여행
+            </h2>
+            <p>그동안 몰랐던 국내 여행지의 아름다움을 발견해 보세요</p>
+            <button type="button" class="main__btn">알아보기</button>
+          </section>
         </div>
       </div>
 
-      <!--/*search__wrap -->
-      <!-- main content -->
-      <div class="main__content__wrap">
-        <section class="main__content">
-          <h2>
-            가까운 곳에서 <br />
-            즐기는 색다른여행
-          </h2>
-          <p>그동안 몰랐던 국내 여행지의 아름다움을 발견해 보세요</p>
-          <button type="button" class="main__btn">알아보기</button>
-        </section>
-      </div>
       <!-- /*.main__content__wrap -->
     </div>
     <!-- /* #main__container -->
@@ -146,48 +146,42 @@
     <!-- content1 -->
     <article id="content01">
       <ul class="content01__wrap">
-        <div class="content__menu__wrap">
-          <li class="content__menu">
-            <a href="#">
-              <img src="./imgs/1.webp" alt="online-experience" />
-              <div class="content__menu__info">
-                <h3>온라인 체험</h3>
-                <p>
-                  세계각지의 호스트가 진행하고 모두 함께 즐기는 독특한 액티비티
-                </p>
-              </div>
-            </a>
-          </li>
-        </div>
+        <li class="content__menu">
+          <a href="#">
+            <img src="./imgs/1.webp" alt="online-experience" />
+            <div class="content__menu__info">
+              <h3>온라인 체험</h3>
+              <p>
+                세계각지의 호스트가 진행하고 모두 함께 즐기는 독특한 액티비티
+              </p>
+            </div>
+          </a>
+        </li>
 
-        <div class="content__menu__wrap">
-          <li class="content__menu">
-            <a href="#">
-              <img src="./imgs/2.webp" alt="special-space" />
-              <div class="content__menu__info">
-                <h3>독특한 공간</h3>
-                <p>
-                  단순한 숙소 이상의 특별함이 담긴 공간
-                </p>
-              </div>
-            </a>
-          </li>
-        </div>
+        <li class="content__menu">
+          <a href="#">
+            <img src="./imgs/2.webp" alt="special-space" />
+            <div class="content__menu__info">
+              <h3>독특한 공간</h3>
+              <p>
+                단순한 숙소 이상의 특별함이 담긴 공간
+              </p>
+            </div>
+          </a>
+        </li>
 
-        <div class="content__menu__wrap">
-          <li class="content__menu">
-            <a href="#">
-              <img src="./imgs/3.jpg" alt="whole-house" />
-              <div class="content__menu__info">
-                <h3>집 전체</h3>
-                <p>
-                  일행만을 위한 편안한 공간에서 친구 및 가족과 오붓한 시간을
-                  보내세요
-                </p>
-              </div>
-            </a>
-          </li>
-        </div>
+        <li class="content__menu">
+          <a href="#">
+            <img src="./imgs/3.jpg" alt="whole-house" />
+            <div class="content__menu__info">
+              <h3>집 전체</h3>
+              <p>
+                일행만을 위한 편안한 공간에서 친구 및 가족과 오붓한 시간을
+                보내세요
+              </p>
+            </div>
+          </a>
+        </li>
       </ul>
     </article>
 
