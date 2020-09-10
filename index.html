@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>clonebnb</title>
+    <title>숙소, 체험, 장소를 모두 한곳에서 - 에어비앤비</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="mediaquery.css" />
@@ -46,28 +46,58 @@
 
           <!-- navbar-->
           <!-- navbar__menu -->
-          <ul class="navbar__menu">
-            <li><a href="#">숙소</a></li>
-            <li><a href="#">장기숙박</a></li>
-            <li><a href="#">체험</a></li>
-            <li><a href="#">온라인체험</a></li>
-          </ul>
+          <div class="navbar__menu__wrap">
+            <ul class="navbar__menu">
+              <li><a href="#">숙소</a></li>
+              <li><a href="#">장기숙박</a></li>
+              <li><a href="#">체험</a></li>
+              <li><a href="#">온라인체험</a></li>
+            </ul>
+          </div>
 
           <!-- navbar links -->
           <ul class="navbar__links">
-            <li class="link__language">
-              <!-- 영역이 오버되기때문에 wrap 씌어줌 -->
+            <li class="link__language" id="linkItem">
               <div class="link__language__wrap">
                 <i class="fas fa-globe"></i>
                 <i class="fas fa-angle-down"></i>
               </div>
+              <!-- li요소의 숨겨둔다 -->
+              <!-- 클릭했을때 나오는 link__language__menu-->
+              <div class="link__language__menu" id="dropdown" >
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-globe"></i>
+                      <span>한국어 (KR)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-won-sign"></i>
+                      <span href="#">KRW</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
 
-            <li class="link__login">
+            <li class="link__login" id="linkItem">
               <!-- 영역이 오버되기때문에 wrap 씌어줌 -->
               <div class="link__login__wrap">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-user-circle"></i>
+              </div>
+              <!-- li요소에 숨겨둔다 -->
+              <!-- 클릭했을 때 나오는 menu -->
+              <div class="link__login__menu" id="dropdown">
+                <ul>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">숙소호스트 되기</a></li>
+                  <li><a href="#">체험호스팅하기</a></li>
+                  <li><a href="#">도움말</a></li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -91,6 +121,7 @@
                 />
               </form>
             </div>
+
             <div class="bar"></div>
             <div class="search__checkdate">
               <div class="search__checkin">
@@ -380,6 +411,7 @@
     </footer>
     <!-- /*footer -->
 
-    <script src="main.js"></script>
+    <script src="scrollbar.js" defer></script>
+    <script src="click.js" defer></script>
   </body>
 </html>

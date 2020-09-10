@@ -1,2 +1,3 @@
-//  스크롤 했을 때 상단에 search location 고정
-const
+const aside = document.querySelector("#aside");
+const search = document.querySelector(".search__location");
+const scrollClass = document.querySelector(".scrollSearch");

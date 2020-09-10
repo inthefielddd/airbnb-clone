@@ -33,6 +33,12 @@
     display: none;
   }
 
+  /* .navbar__menu {
+  }
+  .navbar__menu li {
+    width: 25%;
+  } */
+
   .main__img {
     background: url(./imgs/main2.jpg) no-repeat center / cover;
   }
@@ -47,7 +53,6 @@
   #content01 {
     max-width: 1760px;
     margin: 20px auto;
-    padding: 0 20px;
   }
 
   /* content03 */
@@ -89,27 +94,23 @@
     display: none;
   }
 
+  .search__main__wrap {
+    margin: 0 auto;
+  }
   .search__wrap {
     flex-direction: row-reverse;
-    width: 95%;
     height: 47px;
     margin: 15px auto;
   }
 
-  .main__content__wrap {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
   .main__content {
-    position: absolute;
-    left: 0;
+    padding: 0;
     text-align: center;
   }
-
+  .main__content h2 {
+    font-size: var(--font-large-size);
+    font-weight: 700;
+  }
   .search__location {
     width: 100%;
   }
@@ -132,6 +133,7 @@
     grid-template-columns: 80% 80% 80%;
     grid-template-rows: 1fr;
   }
+
   /* content02 */
   /* 요소 하나씩 */
   .article__content__wrap {
